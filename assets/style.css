@@ -21,7 +21,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 /*VARIABLES*/
 :root{
     --background: #c7c6fa;
@@ -33,6 +32,9 @@ body{
     font-family: 'unbpro_regular';
 }
 
+.strong{
+    font-weight: bold;
+}
 /*NAVBAR*/
 .navbar{
     margin-bottom: 2%;
@@ -46,7 +48,6 @@ body{
     color: black;
     padding-left: 1%;
 }
-
 /*TOP*/
 .background_top{
     width: 100%;
@@ -105,3 +106,12 @@ body{
     color: black;
     transition: 0.2s;
 }
+/*A PROPOS DE MOI*/
+.a_propos{
+    text-align: center;
+    margin: 10% 5% 10% 5%;
+}
+.titre_a_propos{
+    font-size: 35px;
+}
+/*COMPETENCES*/
