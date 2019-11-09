@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF=8">
     <title>Morgane Jarry</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
     <!--NAVBAR-->
     <div class="navbar">
-        <div class="titre_navbar">Morgane Jarry</div>
+        <div class="titre_navbar">MORGANE JARRY</div>
         <hr>
         <a href="#header" class="elem_menu">Accueil</a>
         <a href="#moi" class="elem_menu">A propos de moi</a>
@@ -18,16 +18,18 @@
         <a href="#experience" class="elem_menu">Expérience</a>
         <a href="#competences" class="elem_menu">Compétences</a>
         <a href="#contact" class="elem_menu">Me contacter</a>
+        <a href="cv/CVStageDev.pdf" download="cv_jarry_morgane.pdf" class="elem_menu">CV</a>
     </div>
 
     <!--TOP-->
     <div class="header">
         <img class="background_top" src="assets/pictures/background_top.png">
-        <div class="barre_header">
+        <div class="barre_header"></div>
+        <div class="contenu_barre_header">
             <p class="nom_header">MORGANE JARRY</p>
             <P class="sous-titre_header">Développeuse web</P>
-            <a href="#contact" class="button_contact">Contactez-moi</a>
-            <a href="cv/CVStageDev.pdf" download="cv_jarry_morgane.pdf" class="button_contact">Téléchargez mon CV</a>
+            <a href="#contact" class="button_contact button1">Contactez-moi</a>
+            <a href="cv/CVStageDev.pdf" download="cv_jarry_morgane.pdf" class="button_contact button2">Téléchargez mon CV</a>
         </div>
     </div>
     <!--A PROPOS DE MOI-->
@@ -35,7 +37,7 @@
         <p class="titre_moi">A propos de moi</p>
         <p>
             Je suis Morgane Jarry, 25 ans et vivant à Toulouse. Actuellement en <span class="strong">formation
-            développeur web</span> à l'ADRAR,
+                développeur web</span> à l'ADRAR,
             je suis à la recherche d'un <span class="strong">stage de 11 semaines non rémunérées</span> à partir du
             <span class="strong">30 mars 2020 au 12 juin 2020</span>.
             J’aime travailler en équipe où je peux exprimer mes qualités relationnelles tout en étant autonome.
@@ -132,7 +134,7 @@
                 <label class="required" for="message">Votre message:</label><br />
                 <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
                 <span id="message_validation" class="error_message"></span>
-            </div>   
+            </div>
             <input id="submit_button" type="submit" value="Envoyer" />
         </form>
     </div>

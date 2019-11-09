@@ -24,7 +24,84 @@
 
 /*VARIABLES*/
 :root{
-    --color-text: #9292A8;
+    --background: #c7c6fa;
+    --light-background: #faeffa;
+    --button-hover: #829bfa;
 }
 
- 
+body{
+    font-family: 'unbpro_regular';
+}
+
+/*NAVBAR*/
+.navbar{
+    margin-bottom: 2%;
+}
+.titre_navbar{
+    font-size: 25px;
+    padding-left: 1%;
+}
+.elem_menu{
+    text-decoration: none;
+    color: black;
+    padding-left: 1%;
+}
+
+/*TOP*/
+.background_top{
+    width: 100%;
+}
+.barre_header{
+    background-color: white;
+    opacity: 40%;
+    margin-top: -25%;
+    padding-bottom: 25%;
+    position: relative;
+    z-index: 1;
+
+}
+.contenu_barre_header{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: -22%;
+}
+.nom_header{
+    font-size: 55px;
+    opacity: 100%;
+    opacity: 100% !important;
+    color: black !important;
+}
+.sous-titre_header{
+    margin: -4% 0 5% 0;
+}
+.button_contact{
+    margin: 0% 3% 0% 3%;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    height: 40px;
+    width: 160px;
+    font-size: 15px;
+    padding: 0 15px 20px 15px;
+}
+.button1{
+    background-color: white;
+    border: 1px solid black;
+    padding: 0 35px 20px 35px;
+}
+.button1:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+.button2{
+    background-color: black;
+    color: white;
+}
+.button2:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: 0.2s;
+}
