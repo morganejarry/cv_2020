@@ -23,8 +23,8 @@
 }
 /*VARIABLES*/
 :root{
-    --background: #c7c6fa;
-    --light-background: #faeffa;
+    --background: #cccafa;
+    --light-background: #faeffa;/*#faeefa*/
     --button-hover: #829bfa;
 }
 
@@ -115,3 +115,10 @@ body{
     font-size: 35px;
 }
 /*COMPETENCES*/
+.competences{
+    background-color: var(--background)
+}
+.titre_competences{
+    font-size: 35px;
+    text-align: center;
+}
