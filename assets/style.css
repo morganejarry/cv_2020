@@ -23,13 +23,14 @@
 }
 /*VARIABLES*/
 :root{
-    --background: #e3f2f3;
-    --light-background: #cccafa;
+    --medium: #e3f2f3;
+    --light: #f7f7f7;
     --button-hover: #829bfa;
 }
 
 body{
     font-family: 'unbpro_regular';
+    background-color: var(--light);
 }
 
 .strong{
@@ -70,8 +71,8 @@ body{
 .nom_header{
     font-size: 55px;
     opacity: 100%;
-    opacity: 100% !important;
-    color: black !important;
+    opacity: 100%;
+    color: black;
 }
 .sous-titre_header{
     margin: -4% 0 5% 0;
@@ -107,7 +108,7 @@ body{
     transition: 0.2s;
 }
 /*A PROPOS DE MOI*/
-.a_propos{
+.conteneur_a_propos{
     text-align: center;
     margin: 10% 5% 10% 5%;
 }
@@ -115,16 +116,15 @@ body{
     font-size: 35px;
 }
 /*COMPETENCES*/
-.competences{
-    background-color: var(--background)
+.conteneur_competences{
+    background-color: var(--medium)
 }
 .titre_competences{
     font-size: 35px;
     text-align: center;
 }
 /*DIPLOMES*/
-.competences{
-    background-color: var(--light-background)
+.conteneur_diplomes{
 }
 .titre_diplomes{
     font-size: 35px;
@@ -135,9 +135,20 @@ body{
     margin: -3% 0 5% 0;
     font-size: 15px;
 }
+.date_diplome{
+    margin-bottom: -5%;
+}
+.nom_diplome{
+    font-size: 20px;
+    margin-bottom: -1%;
+}
+.contenu_diplome{
+    line-height: 25px;
+    margin-bottom: 8%;
+}
 .diplomes{
     display: grid;
-    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-columns: 3fr 3fr 2fr;
 }
 .adrar{
     grid-column: 2/3;
