@@ -50,8 +50,12 @@ body{
     padding-left: 1%;
 }
 /*TOP*/
+.header{
+    height: 800px;
+}
 .background_top{
     width: 100%;
+    height: 800px;
 }
 .barre_header{
     background-color: white;
@@ -66,7 +70,7 @@ body{
     text-align: center;
     position: relative;
     z-index: 2;
-    margin-top: -22%;
+    bottom: 400px;
 }
 .nom_header{
     font-size: 55px;
@@ -110,7 +114,7 @@ body{
 /*A PROPOS DE MOI*/
 .conteneur_a_propos{
     text-align: center;
-    margin: 10% 5% 10% 5%;
+    margin: 0% 5% 10% 5%;
 }
 .titre_a_propos{
     font-size: 35px;
