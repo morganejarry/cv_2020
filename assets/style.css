@@ -38,7 +38,12 @@ body{
 }
 /*NAVBAR*/
 .navbar{
+    background-color: var(--light);
+    position: relative;
+    z-index: 3;
     margin-bottom: 2%;
+    position: sticky;
+    top: 0;
 }
 .titre_navbar{
     font-size: 25px;
@@ -47,8 +52,9 @@ body{
 .elem_menu{
     text-decoration: none;
     color: black;
-    padding-left: 1%;
+    padding: 0 1% 2% 0;
 }
+
 /*TOP*/
 .header{
     height: 800px;
@@ -121,14 +127,31 @@ body{
 }
 /*COMPETENCES*/
 .conteneur_competences{
-    background-color: var(--medium)
+    background-color: var(--medium);
 }
 .titre_competences{
     font-size: 35px;
     text-align: center;
 }
+.ensemble_competences{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    margin: 0% 2% 0 4%;
+}
+
+.competences{
+    background-color: var(--light);
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 10%;
+}
+.logo{
+    margin-top: 80px;
+}
 /*DIPLOMES*/
 .conteneur_diplomes{
+
 }
 .titre_diplomes{
     font-size: 35px;
@@ -152,7 +175,14 @@ body{
 }
 .diplomes{
     display: grid;
-    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-columns: 2fr 3fr 2fr;
+}
+.diplome{
+    background-color: var(--medium);
+    height: 200px;
+    width: 700px;
+    padding-left: 200px;
+    margin-bottom: 8%
 }
 .adrar{
     grid-column: 2/3;

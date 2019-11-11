@@ -6,7 +6,7 @@
         padding-bottom: 35%;
     }
 }
-@media screen and (max-width: 375px)
+@media screen and (max-width: 414px)
 {
     .header{
         height: 400px;
@@ -31,4 +31,54 @@
         padding: 0 10px 20px 10px;
     }
 
+}
+/*COMPETENCES*/
+@media screen and (max-width: 1440px)
+{
+    .competences{
+        width: 250px;
+        height: 350px;
+        margin: 0 0% 10% 8%;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .logo{
+        width: 60%;
+    }
+    .competences{
+        width: 200px;
+        height: 300px;
+        margin: 0 0% 15% 8%;
+    }
+}
+@media screen and (max-width: 834px)
+{
+    .logo{
+        width: 50%;
+    }
+    .competences{
+        width: 150px;
+        height: 250px;
+        margin: 0 0% 18% 8%;
+    }
+}
+@media screen and (max-width: 414px)
+{
+    .ensemble_competences {
+        grid-template-columns: 2fr 2fr;
+}
+/*DIPLOMES*/
+@media screen and (max-width: 834px)
+{
+    .diplome{
+        background-color: var(--medium);
+        height: 250px;
+        width: 600px;
+        padding-left: 200px;
+        margin-bottom: 5%
+    }
+    .contenu_diplome{
+        text-align: justify;
+    }
 }
