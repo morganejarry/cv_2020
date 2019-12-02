@@ -23,7 +23,7 @@
 }
 /*VARIABLES*/
 :root{
-    --medium: #e3f2f3;
+    --medium: /*#e3f2f3*/#dfd6fa;
     --light: #f7f7f7;
     --button-hover: #829bfa;
 }
@@ -129,9 +129,10 @@ body{
 }
 /*COMPETENCES*/
 .conteneur_competences{
-    background-color: var(--medium);
+    background: linear-gradient(#523ed4, #8460f0);
 }
 .titre_competences{
+    color: #f7f7f7;
     font-size: 35px;
     text-align: center;
 }
@@ -147,19 +148,26 @@ body{
     width: 400px;
     height: 400px;
     margin-bottom: 10%;
+    border-radius: 15%;
 }
 .logo{
-    margin-top: 80px;
+    padding-top: 20%;
 }
 /*DIPLOMES*/
+.conteneur_diplomes{
+    background: linear-gradient(#8460f0, #a589fa);
+}
 .titre_diplomes{
+    color: #f7f7f7;
     font-size: 35px;
     text-align: center;
+    margin: 0;
 }
 .sous-titre_diplomes{
     text-align: center;
-    margin: -3% 0 5% 0;
+    margin: -1% 0 5% 0;
     font-size: 15px;
+    color: #f7f7f7;
 }
 .date_diplome{
     margin-bottom: -5%;
@@ -177,21 +185,94 @@ body{
     grid-template-columns: 2fr 3fr 2fr;
 }
 .diplome{
-    background-color: var(--medium);
+    background-color: var(--light);
     height: 200px;
     width: 700px;
     padding-left: 200px;
-    margin-bottom: 8%
+    margin-bottom: 8%;
+    border-radius: 10px;
 }
 .adrar{
     grid-column: 2/3;
     grid-row: 1;
 }
-.bts{
+.certification{
     grid-column: 2/3;
     grid-row: 2;
 }
-.bac{
+.bts{
     grid-column: 2/3;
     grid-row: 3;
+}
+.bac{
+    grid-column: 2/3;
+    grid-row: 4;
+}
+/*EXPERIENCE*/
+.titre_experience{
+    background: #a589fa;
+    font-size: 35px;
+    text-align: center;
+    margin: auto;
+    color: #f7f7f7;
+    padding-bottom: 5%;
+}
+.conteneur_experience{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    background: linear-gradient(#a589fa, #bba5fc, #d2c5fb);
+}
+.experience{
+    background-color: var(--light);
+    border-radius: 10px;
+    height: auto;
+    padding-left: 2%;
+    margin: 2% 2% 2% 2%;
+}
+.role{
+    font-size: 20px;
+    margin-bottom: -4%;
+}
+.pcworks{
+    grid-column: 1;
+    grid-row: 1;
+}
+.immo{
+    grid-column: 2;
+    grid-row: 1;
+}
+.interim{
+    grid-column: 1;
+    grid-row: 2;
+}
+.lasalette{
+    grid-column: 2;
+    grid-row: 2;
+}
+.mcdo{
+    grid-column: 1;
+    grid-row: 3;
+    padding-bottom: 5%;
+}
+
+/*CONTACT*/
+.conteneur_contact{
+    background: linear-gradient(#d2c5fb, #dcd3f8, #f7f7f7);
+}
+.titre_contact{
+    color: var(--light);
+    margin: 0;
+    padding: 5% 0 4% 0;
+    font-size: 35px;
+}
+.formulaire_contact{
+    text-align: center;
+}
+
+/*LOGOS CONTACT*/
+.logos_contact{
+    text-align: center;
+}
+.logo{
+    margin: 1%;
 }
