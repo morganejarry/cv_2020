@@ -21,7 +21,7 @@
 }
 @media screen and (max-width: 414px)
 {
-    .header{
+    #header{
         height: 400px;
     }
     .background_top{
@@ -120,7 +120,7 @@
         font-size: 14px;
     }
 
-    .conteneur_experience{
+    #conteneur_experience{
         grid-template-columns: 1fr 3fr 1fr;
     }
     .experience{
