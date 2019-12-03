@@ -12,7 +12,7 @@
     <!--NAVBAR-->
     <div class="navbar">
         <div class="titre_navbar">MORGANE JARRY</div>
-        <hr>
+        
         <a href="#header" class="elem_menu">Accueil</a>
         <a href="#a_propos" class="elem_menu">A propos de moi</a>
         <a href="#competences" class="elem_menu">Compétences</a>
@@ -185,20 +185,20 @@
             <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
                 <div class="row">
                     <label class="required" for="name">Votre nom:</label><br />
-                    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                    <input id="name" class="input_name_email" name="name" type="text" value="" size="30" /><br />
                     <span id="name_validation" class="error_message"></span>
                 </div>
                 <div class="row">
                     <label class="required" for="email">Votre email:</label><br />
-                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                    <input id="email" class="input_name_email" name="email" type="text" value="" size="30" /><br />
                     <span id="email_validation" class="error_message"></span>
                 </div>
                 <div class="row">
                     <label class="required" for="message">Votre message:</label><br />
-                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                    <textarea id="message" class="input_message" name="message" rows="7" cols="30"></textarea><br />
                     <span id="message_validation" class="error_message"></span>
                 </div>
-                <input id="submit_button" type="submit" value="Envoyer" />
+                <input id="submit_button" class="submit_button" type="submit" value="ENVOYER" />
             </form>
         </div>
         <img class="image_contact" scr="assets/pictures/image_contact.PNG">
@@ -207,23 +207,23 @@
 
     <div class="logos_contact">
         <a class="lienlogo" href="http://www.linkedin.com/in/morgane-jarry/">
-            <img class="logo" src="assets/pictures/linkedin.png" onmouseover="this.src='assets/pictures/linkedinc.png'"
+            <img class="logocontact" src="assets/pictures/linkedin.png" onmouseover="this.src='assets/pictures/linkedinc.png'"
                 onmouseout="this.src='assets/pictures/linkedin.png'">
         </a>
         <a class="lienlogo" href="http://www.instagram.com/MorganeJarry/">
-            <img class="logo" src="assets/pictures/instagram.png" onmouseover="this.src='assets/pictures/instagramc.png'"
+            <img class="logocontact" src="assets/pictures/instagram.png" onmouseover="this.src='assets/pictures/instagramc.png'"
                 onmouseout="this.src='assets/pictures/instagram.png'">
         </a>
         <a class="lienlogo" href="mailto:morganejarry1@gmail.com">
-            <img class="logo" src="assets/pictures/gmail.png" onmouseover="this.src='assets/pictures/gmailc.png'"
+            <img class="logocontact" src="assets/pictures/gmail.png" onmouseover="this.src='assets/pictures/gmailc.png'"
                 onmouseout="this.src='assets/pictures/gmail.png'">
         </a>
         <a class="lienlogo" href="https://join.skype.com/invite/hSlggqhXl8tP">
-            <img class="logo" src="assets/pictures/skype.png" onmouseover="this.src='assets/pictures/skypec.png'"
+            <img class="logocontact" src="assets/pictures/skype.png" onmouseover="this.src='assets/pictures/skypec.png'"
                 onmouseout="this.src='assets/pictures/skype.png'">
         </a>
         <a class="lienlogo" href="https://github.com/morganejarry/">
-            <img class="logo" src="assets/pictures/github.png" onmouseover="this.src='assets/pictures/githubc.png'"
+            <img class="logocontact" src="assets/pictures/github.png" onmouseover="this.src='assets/pictures/githubc.png'"
                 onmouseout="this.src='assets/pictures/github.png'">
         </a>
     </div>

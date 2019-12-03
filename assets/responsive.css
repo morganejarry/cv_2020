@@ -52,8 +52,8 @@
 @media screen and (max-width: 1440px)
 {
     .competences{
-        width: 250px;
-        height: 350px;
+        width: 90%;
+        height: 90%;
         margin: 0 0% 10% 8%;
     }
 }
@@ -63,8 +63,6 @@
         width: 60%;
     }
     .competences{
-        width: 200px;
-        height: 210px;
         margin: 0 0% 15% 8%;
     }
 }
@@ -74,8 +72,6 @@
         width: 55%;
     }
     .competences{
-        width: 170px;
-        height: 170px;
         margin: 0 0% 18% 0%;
     }
 }
@@ -83,6 +79,7 @@
 {
     .ensemble_competences {
         grid-template-columns: 2fr 2fr;
+        margin: 0% 2% 0 6%
     }
 }
 @media screen and (max-width: 375px)
@@ -90,57 +87,29 @@
     .ensemble_competences {
         margin: 0 1% 0 6%;
     }
-    .competences{
-        width: 150px;
-        height: 150px;
-    }
 }
-@media screen and (max-width: 360px)
-{
-    .ensemble_competences {
-        margin: 0 1% 0 5%;
-    }
+
 /*DIPLOMES*/
-@media screen and (max-width: 834px)
+@media screen and (max-width: 500px)
 {
     .diplome{
-        height: 180px;
-        width: 730px;
-        padding-left: 0px;
         margin-bottom: 5%;
-        text-align: center;
+        padding: 1% 1% 1% 1%;
     }
-}
-@media screen and (max-width: 414px)
-{
-    .diplome{
-        height: 280px;
-        width: 370px;
-        padding-left: 0px;
-        margin-bottom: 5%;
-        text-align: center;
+    .date_diplome {
+        font-size: 15px;
     }
-}
-@media screen and (max-width: 375px)
-{
-    .diplome{
-        height: 280px;
-        width: 330px;
-        padding-left: 0px;
-        margin-bottom: 5%;
-        text-align: center;
+    .nom_diplome {
+        line-height: 30px;
+    }
+    .bac{
+        margin-bottom: 0%;
     }
 }
 
 /*EXPERIENCE*/
-
-
 @media screen and (max-width: 1024px)
 {
-    .experience{
-        width: 430px;
-        margin-bottom: 0%;
-    }
     .role{
         font-size: 16px;
     }
@@ -150,17 +119,14 @@
     .contenu_experience{
         font-size: 14px;
     }
-}
 
-@media screen and (max-width: 1024px)
-{
     .conteneur_experience{
         grid-template-columns: 1fr 3fr 1fr;
     }
     .experience{
         grid-column: 2;
-        height: 150px;
-        width: 600px;
+        height: 95%;
+        width: 100%;
         padding-left: 0px;
         margin-bottom: 5%;
         text-align: center;
@@ -180,28 +146,49 @@
     .mcdo{
         grid-row: 5;
         padding-bottom: 0%;
-    }
-    
+    }    
 }
 
-@media screen and (max-width: 414px){
-    .experience{
-        height: 240px;
-        width: 350px;
-        margin: 0% 0% 5% 0%;
+/*CONTACT*/
+
+@media screen and (max-width: 1280px)
+{
+    .input_name_email{
+        width: 35%;
+        padding: 1% 0 1% 1.5%;
+    }
+    .input_message{
+        height: 300px;
+        width: 35%;
+        padding: 2% 0 2% 1.5%;
+    }
+    .submit_button{
+    font-size: 15px;
+    width: 10%;
     }
 }
-
-@media screen and (max-width: 375px){
-    .experience{
-        width: 350px;
-        margin-bottom: 8%;
+@media screen and (max-width: 800px)
+{
+    .input_name_email{
+        width: 50%;
+    }
+    .input_message{
+        width: 50%;
+    }
+    .submit_button{
+        width: 20%;
     }
 }
-
-@media screen and (max-width: 360px){
-    .experience{
-        width: 320px;
-        margin-bottom: 8%;
+@media screen and (max-width: 500px)
+{
+    .input_name_email{
+        width: 70%;
+    }
+    .input_message{
+        width: 70%;
+        height: 200px;
+    }
+    .submit_button{
+        width: 40%;
     }
 }

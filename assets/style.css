@@ -41,18 +41,21 @@ body{
     background-color: var(--light);
     position: relative;
     z-index: 3;
-    margin-bottom: 2%;
     position: sticky;
     top: 0;
+    padding: 0 0 2% 1%;
+    border-bottom: solid 1px;
 }
 .titre_navbar{
     font-size: 25px;
-    padding-left: 1%;
+    padding: 0 0 0.5% 1%;
+    color: #5810f1;
 }
+
 .elem_menu{
     text-decoration: none;
     color: black;
-    padding: 0 1% 2% 0;
+    padding: 0 1% 1% 0;
 }
 
 /*TOP*/
@@ -97,7 +100,7 @@ body{
     color: black;
     border-radius: 30px;
     font-size: 15px;
-    padding: 0 15px 20px 15px;
+    padding: 0 2% 20px 2%;
 }
 .button1{
     background-color: white;
@@ -145,7 +148,7 @@ body{
 .competences{
     background-color: var(--light);
     text-align: center;
-    width: 400px;
+    width: 90%;
     height: 400px;
     margin-bottom: 10%;
     border-radius: 15%;
@@ -161,7 +164,7 @@ body{
     color: #f7f7f7;
     font-size: 35px;
     text-align: center;
-    margin: 0;
+    margin: auto;
 }
 .sous-titre_diplomes{
     text-align: center;
@@ -169,8 +172,9 @@ body{
     font-size: 15px;
     color: #f7f7f7;
 }
+
 .date_diplome{
-    margin-bottom: -5%;
+    margin-bottom: -2%;
 }
 .nom_diplome{
     font-size: 20px;
@@ -178,36 +182,17 @@ body{
 }
 .contenu_diplome{
     line-height: 25px;
-    margin-bottom: 8%;
 }
-.diplomes{
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
-}
+
 .diplome{
     background-color: var(--light);
-    height: 200px;
-    width: 700px;
-    padding-left: 200px;
-    margin-bottom: 8%;
     border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 1%;
+    text-align: center;
 }
-.adrar{
-    grid-column: 2/3;
-    grid-row: 1;
-}
-.certification{
-    grid-column: 2/3;
-    grid-row: 2;
-}
-.bts{
-    grid-column: 2/3;
-    grid-row: 3;
-}
-.bac{
-    grid-column: 2/3;
-    grid-row: 4;
-}
+
 /*EXPERIENCE*/
 .titre_experience{
     background: #a589fa;
@@ -268,11 +253,39 @@ body{
 .formulaire_contact{
     text-align: center;
 }
+.input_name_email{
+    border-radius: 30px;
+    border: none;
+    width: 22%;
+    padding: 0.5% 0 0.5% 1.5%;
+    color: #9292a8;
+}
+.input_message{
+    border-radius: 30px;
+    border: none;
+    height: 400px;
+    width: 22%;
+    padding: 2% 0 2% 1.5%;
+    color: #9292a8;
+}
+.submit_button{
+color: var(--light);
+background-color: #543fd5;
+font-size: 15px;
+border-radius: 30px;
+border: none;
+height: 40px;
+width: 7%;
+}
+.submit_button:hover{
+    background-color: #8b64ff;
+    transition: 0.2s;
+}
 
 /*LOGOS CONTACT*/
 .logos_contact{
     text-align: center;
 }
-.logo{
-    margin: 1%;
+.logocontact{
+    margin: 10% 1% 1% 1%;
 }
