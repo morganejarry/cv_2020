@@ -1,0 +1,14 @@
+{
+    "name": "morgane/nouveau-cv",
+    "description": "CV en ligne",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Morgane jarry",
+            "email": "morganejarry1@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^5.4"
+    }
+}

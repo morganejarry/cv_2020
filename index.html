@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <meta charset="UTF=8">
+    <meta charset="UTF-8">
     <title>Morgane Jarry</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/responsive.css">
@@ -182,20 +182,25 @@
     <div id="conteneur_contact">
         <div class="formulaire_contact">
             <p class="titre_contact">CONTACTEZ-MOI</p>
-            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <form id="contact_form" action="formulaire.php" method="POST" enctype="multipart/form-data">
                 <div class="row">
                     <label class="required" for="name">Votre nom:</label><br />
-                    <input id="name" class="input_name_email" name="name" type="text" value="" size="30" /><br />
+                    <input id="name" class="input_name_email" name="name" type="text" value="" size="40" required/><br />
                     <span id="name_validation" class="error_message"></span>
                 </div>
                 <div class="row">
+                    <label class="required" for="company">Entreprise:</label><br />
+                    <input id="company" class="input_name_email" name="company" type="text" value="" size="40" /><br />
+                    <span id="company_validation" class="error_message"></span>
+                </div>
+                <div class="row">
                     <label class="required" for="email">Votre email:</label><br />
-                    <input id="email" class="input_name_email" name="email" type="text" value="" size="30" /><br />
+                    <input id="email" class="input_name_email" name="email" type="text" value="" size="90" required/><br />
                     <span id="email_validation" class="error_message"></span>
                 </div>
                 <div class="row">
                     <label class="required" for="message">Votre message:</label><br />
-                    <textarea id="message" class="input_message" name="message" rows="7" cols="30"></textarea><br />
+                    <textarea id="message" class="input_message" name="message" rows="7" cols="30" required></textarea><br />
                     <span id="message_validation" class="error_message"></span>
                 </div>
                 <input id="submit_button" class="submit_button" type="submit" value="ENVOYER" />
