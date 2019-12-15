@@ -51,9 +51,13 @@
 /*COMPETENCES*/
 @media screen and (max-width: 1440px)
 {
+    .logo {
+        padding-top: 10%;
+        width: 65%;
+    }
     .competences{
         width: 90%;
-        height: 90%;
+        height: 95%;
         margin: 0 0% 10% 8%;
     }
 }

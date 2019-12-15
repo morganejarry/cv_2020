@@ -158,10 +158,11 @@ body{
 }
 /*DIPLOMES*/
 #conteneur_diplomes{
-    background: linear-gradient(#8460f0, #a589fa);
+    background: #f7f7f7;
+    padding-bottom: 5%;
 }
+
 .titre_diplomes{
-    color: #f7f7f7;
     font-size: 35px;
     text-align: center;
     margin: auto;
@@ -170,7 +171,6 @@ body{
     text-align: center;
     margin: -1% 0 5% 0;
     font-size: 15px;
-    color: #f7f7f7;
 }
 
 .date_diplome{
@@ -185,7 +185,8 @@ body{
 }
 
 .diplome{
-    background-color: var(--light);
+    color: #f7f7f7;
+    background-color: #825fef;
     border-radius: 10px;
     width: 70%;
     margin: auto;
