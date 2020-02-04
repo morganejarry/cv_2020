@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,6 +14,13 @@
 <body>
     <!--NAVBAR-->
     <div class="navbar">
+      <?php
+          if (isset($_GET['ok']) && $_GET['ok'] == 1) {
+      ?>
+        <div class="message_envoi_form">Le message à bien été envoyé.</div>
+      <?php
+          }
+      ?>
         <div class="titre_navbar">MORGANE JARRY</div>
         
         <a href="#header" class="elem_menu">Accueil</a>
@@ -151,13 +161,13 @@
     <div id="conteneur_experience">
         <div class="pcworks experience">
             <div class="periode"> Août 2019</div>
-            <div class="role">STAGIAIRE, DEVELOPPEUSE WEB, PCWORKS31</div>
+            <div class="role">STAGIAIRE, DEVELOPPEUSE WEB,  <a href="https://pcworks31.com/">PCWORKS31</a></div>
             <p class="contenu_experience">Stage de validation de projet, en développement web. Refonte complète du site
                 de l'association à l'aide de Joomla.</p>
         </div>
         <div class="immo experience">
             <div class="periode">mai à juillet et septembre à novembre 2019</div>
-            <div class="role">STAGIAIRE, IMMOBILIER, CITY IMMOBILIER | LOFT ONE</div>
+            <div class="role">STAGIAIRE, IMMOBILIER, <a href="http://www.citytransaction.com/">CITY IMMOBILIER</a> | <a href="https://www.loft-one.com/agences/agence/31202">LOFT ONE</a></div>
             <p class="contenu_experience">Deux stages de deux mois chacun, en tant qu’agent commercial et assistante
                 Syndic.</p>
         </div>
@@ -184,24 +194,27 @@
             <p class="titre_contact">CONTACTEZ-MOI</p>
             <form id="contact_form" action="formulaire.php" method="POST" enctype="multipart/form-data">
                 <div class="row">
+                  <span id="name_validation" class="error_envoi"><?php echo empty($_SESSION['erreurs']['erreurEnvoi']) ? "" : $_SESSION['erreurs']['erreurEnvoi']; ?></span>
+                </div>
+                <div class="row">
                     <label class="required" for="name">Votre nom:</label><br />
-                    <input id="name" class="input_name_email" name="name" type="text" value="" size="40" required/><br />
-                    <span id="name_validation" class="error_message"></span>
+                    <input id="name" class="input_name_email" name="name" type="text" value="<?php echo empty($_SESSION['name']) ? "" : $_SESSION['name']; ?>" size="40" required/><br />
+                    <span id="name_validation" class="error_message"><?php echo empty($_SESSION['erreurs']['erreurName']) ? "" : $_SESSION['erreurs']['erreurName']; ?></span>
                 </div>
                 <div class="row">
                     <label class="required" for="company">Entreprise:</label><br />
-                    <input id="company" class="input_name_email" name="company" type="text" value="" size="40" /><br />
-                    <span id="company_validation" class="error_message"></span>
+                    <input id="company" class="input_name_email" name="company" type="text" value="<?php echo empty($_SESSION['company']) ? "" : $_SESSION['company']; ?>" size="40" /><br />
+                    <span id="company_validation" class="error_message"><?php echo empty($_SESSION['erreurs']['erreurCompany']) ? "" : $_SESSION['erreurs']['erreurCompany']; ?></span>
                 </div>
                 <div class="row">
                     <label class="required" for="email">Votre email:</label><br />
-                    <input id="email" class="input_name_email" name="email" type="text" value="" size="90" required/><br />
-                    <span id="email_validation" class="error_message"></span>
+                    <input id="email" class="input_name_email" name="email" type="text" value="<?php echo empty($_SESSION['email']) ? "" : $_SESSION['email']; ?>" size="90" required/><br />
+                    <span id="email_validation" class="error_message"><?php echo empty($_SESSION['erreurs']['erreurEmail']) ? "" : $_SESSION['erreurs']['erreurEmail']; ?></span>
                 </div>
                 <div class="row">
                     <label class="required" for="message">Votre message:</label><br />
-                    <textarea id="message" class="input_message" name="message" rows="7" cols="30" required></textarea><br />
-                    <span id="message_validation" class="error_message"></span>
+                    <textarea id="message" class="input_message" name="message" rows="7" cols="30" required><?php echo empty($_SESSION['message']) ? "" : $_SESSION['message']; ?></textarea><br />
+                    <span id="message_validation" class="error_message"><?php echo empty($_SESSION['erreurs']['erreurMessage']) ? "" : $_SESSION['erreurs']['erreurMessage']; ?></span>
                 </div>
                 <input id="submit_button" class="submit_button" type="submit" value="ENVOYER" />
             </form>

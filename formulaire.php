@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'vendor/autoload.php';
 
 $to = 'morganejarry1@gmail.com';
@@ -35,7 +36,9 @@ if(empty($_SESSION['message'])) {
 }
 
 if(count($erreurs) > 0) {
-    
+    $_SESSION['erreurs'] = $erreurs;
+    header('Location: index.php#conteneur_contact');
+    exit;
 }
 /**
  * Variable qui contient le contenu du mail
@@ -45,7 +48,7 @@ $content = "<html>
                     <title>Contact de mon CV en ligne</title>
                 </head>
                 <body>
-                    <p>Voici le message de " . $_SESSION['name'] . " " . ($_SESSION['company']) . " : </p>
+                    <p>Voici le message de " . $_SESSION['name'] . " ( entreprise :" . ($_SESSION['company']) . ") : </p>
                     <p>" . $_SESSION['message'] . "</p>
                 </body>
             </html>";
@@ -71,3 +74,13 @@ $message = (new Swift_Message($subject))
 
 // Send the message
 $result = $mailer->send($message);
+
+if ($result === 1) {
+    session_destroy();
+    header('Location: index.php?ok=1');
+    exit;
+} else {
+    $erreurs['erreurEnvoi'] = 'Une erreur c\'est produit lors de l\'envoi du mail, veuillez réessayer ultérieurement.';
+    header('Location: index.php#conteneur_contact');
+    exit;
+}

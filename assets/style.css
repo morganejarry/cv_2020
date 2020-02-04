@@ -291,3 +291,15 @@ width: 7%;
 .logocontact{
     margin: 10% 1% 1% 1%;
 }
+
+/*MESSAGE ENVOI FORMULAIRE*/
+
+.message_envoi_form{
+    color: var(--light);
+    background-color: #825fef;
+    border-radius: 10px;
+    width: 30%;
+    margin: auto;
+    padding-bottom: 1%;
+    text-align: center;
+}
